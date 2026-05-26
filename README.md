@@ -3,6 +3,8 @@
 A dual MCP-server system built with a LangGraph ReAct agent, combining external medical knowledge APIs with a local patient database for clinical lookups, ICD-10 coding, and research-backed responses.
 
 ---
+## Demo
+<video controls src="demo.mov" title="Title"></video>
 
 ## System Overview
 
