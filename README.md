@@ -85,7 +85,6 @@ hospital-assistant-MCP-server/
 ├── server/
 │   ├── external_server.py      
 │   └── internal_server.py  
-│
 ├── app.py                 
 ├── .env                   
 ├── hospital.db
@@ -110,7 +109,7 @@ pip install streamlit langchain-mcp-adapters langgraph langchain-openai \
 Create a `.env` file:
 
 ```
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=''
 ```
 
 ### 3. Start the MCP servers
@@ -130,7 +129,6 @@ python server/internal_server.py
 ```bash
 streamlit run app.py
 ```
-
 Open the URL Streamlit.
 
 
