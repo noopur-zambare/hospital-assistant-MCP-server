@@ -4,7 +4,7 @@ A dual MCP-server system built with a LangGraph ReAct agent, combining external 
 
 ---
 
-## 🧩 System Overview
+## System Overview
 
 The project runs three components:
 
@@ -14,7 +14,7 @@ The project runs three components:
 
 ---
 
-## 🌐 External MCP Server
+## External MCP Server
 
 Exposes public medical APIs as MCP tools.
 
@@ -43,7 +43,7 @@ Pull recent medRxiv preprints matching a query (180-day window).
 
 ---
 
-## 🏥 Internal MCP Server
+## Internal MCP Server
 
 Serves a local patient database.
 
@@ -63,7 +63,7 @@ List all patients in the internal database.
 
 ---
 
-## 💬 Streamlit Agent UI
+## Streamlit Agent UI
 
 A chat interface that wires both MCP servers into a LangGraph ReAct agent.
 
@@ -77,7 +77,7 @@ A chat interface that wires both MCP servers into a LangGraph ReAct agent.
 
 ---
 
-## ⚙️ Architecture
+## Architecture
 
 ```
 hospital-assistant-MCP-server/
@@ -93,7 +93,7 @@ hospital-assistant-MCP-server/
 
 ---
 
-## 🚀 Running
+## Running
 
 ### 1. Install dependencies
 
