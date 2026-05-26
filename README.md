@@ -83,21 +83,12 @@ A chat interface that wires both MCP servers into a LangGraph ReAct agent.
 hospital-assistant-MCP-server/
 │
 ├── server/
-│   ├── external_server.py  # MCP server on :8000
-│   │                       #   - health_topics
-│   │                       #   - icd10_lookup
-│   │                       #   - clinical_trials
-│   │                       #   - medrxiv_search
-│   │
-│   └── internal_server.py  # MCP server on :8001
-│                           #   - get_patient
-│                           #   - get_lab_results
-│                           #   - get_risk_score
-│                           #   - list_patients
+│   ├── external_server.py      
+│   └── internal_server.py  
 │
-├── app.py                  # Streamlit chat UI + LangGraph agent
-├── .env                    # OPENAI_API_KEY, etc.
-├── hospital.db             # synthetic SQL database
+├── app.py                 
+├── .env                   
+├── hospital.db
 └── README.md
 ```
 
