@@ -1,4 +1,4 @@
-# 🏥 Hospital Assistant MCP Server
+# Hospital Assistant MCP Server
 
 A dual MCP-server system built with a **LangGraph ReAct agent** and a **Streamlit UI**, combining external medical knowledge APIs with a local patient database for clinical lookups, ICD-10 coding, and research-backed responses.
 
@@ -127,11 +127,11 @@ OPENAI_API_KEY=sk-...
 In two separate terminals:
 
 ```bash
-python server/external_server.py    # listens on :8000
+python server/external_server.py    
 ```
 
 ```bash
-python server/internal_server.py    # listens on :8001
+python server/internal_server.py   
 ```
 
 ### 4. Launch the UI
@@ -140,6 +140,6 @@ python server/internal_server.py    # listens on :8001
 streamlit run app.py
 ```
 
-Open the URL Streamlit prints (typically `http://localhost:8501`).
+Open the URL Streamlit.
 
-Each response includes a "Tool trace" expander so you can see exactly which tools fired and what they returned.
+
