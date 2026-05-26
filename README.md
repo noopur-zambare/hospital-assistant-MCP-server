@@ -4,8 +4,9 @@ A dual MCP-server system built with a LangGraph ReAct agent, combining external 
 
 ---
 ## Demo
-<video controls src="demo.mov" title="Title"></video>
+https://github.com/user-attachments/assets/03d67b50-f7d1-4476-ad05-520acee3a4b0
 
+---
 ## System Overview
 
 The project runs three components:
