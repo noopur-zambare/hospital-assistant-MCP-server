@@ -29,16 +29,16 @@ Exposes public medical APIs as MCP tools.
 
 ### Tools
 
-#### health_topics
+- #### health_topics
 Search Health.gov MyHealthfinder for consumer health information by keyword.
 
-#### icd10_lookup
+- #### icd10_lookup
 Look up ICD-10-CM codes by name or keyword via the NLM Clinical Tables API.
 
-#### clinical_trials
+- #### clinical_trials
 Search ClinicalTrials.gov v2 for studies by condition.
 
-#### medrxiv_search
+- #### medrxiv_search
 Pull recent medRxiv preprints matching a query (180-day window).
 
 ---
@@ -49,16 +49,16 @@ Serves a local patient database.
 
 ### Tools
 
-#### get_patient
+- #### get_patient
 Fetch a patient's record by ID (e.g. `P003`).
 
-#### get_lab_results
+- #### get_lab_results
 Retrieve a patient's lab test results.
 
-#### `get_risk_score`
+- #### get_risk_score
 Get a patient's calculated clinical risk score.
 
-#### `list_patients`
+- #### list_patients
 List all patients in the internal database.
 
 ---
