@@ -1,15 +1,15 @@
 # Hospital Assistant MCP Server
 
-A dual MCP-server system built with a **LangGraph ReAct agent** and a **Streamlit UI**, combining external medical knowledge APIs with a local patient database for clinical lookups, ICD-10 coding, and research-backed responses.
+A dual MCP-server system built with a LangGraph ReAct agent, combining external medical knowledge APIs with a local patient database for clinical lookups, ICD-10 coding, and research-backed responses.
 
 ---
 
 ## 🧩 System Overview
 
-The project runs **three components**:
+The project runs three components:
 
-1. **External MCP Server** (port `8000`) - public medical knowledge APIs
-2. **Internal MCP Server** (port `8001`) - local patient database
+1. **External MCP Server** - public medical knowledge APIs
+2. **Internal MCP Server** - local patient database
 3. **Streamlit App** - chat UI with an OpenAI agent that calls tools across both servers
 
 ---
@@ -29,30 +29,30 @@ Exposes public medical APIs as MCP tools.
 
 ### Tools
 
-#### `health_topics`
+#### health_topics
 Search Health.gov MyHealthfinder for consumer health information by keyword.
 
-#### `icd10_lookup`
+#### icd10_lookup
 Look up ICD-10-CM codes by name or keyword via the NLM Clinical Tables API.
 
-#### `clinical_trials`
+#### clinical_trials
 Search ClinicalTrials.gov v2 for studies by condition.
 
-#### `medrxiv_search`
+#### medrxiv_search
 Pull recent medRxiv preprints matching a query (180-day window).
 
 ---
 
 ## 🏥 Internal MCP Server
 
-Serves a local patient database. All patient data stays on-prem.
+Serves a local patient database.
 
 ### Tools
 
-#### `get_patient`
+#### get_patient
 Fetch a patient's record by ID (e.g. `P003`).
 
-#### `get_lab_results`
+#### get_lab_results
 Retrieve a patient's lab test results.
 
 #### `get_risk_score`
