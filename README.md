@@ -3,12 +3,12 @@
 A dual MCP-server system built with a LangGraph ReAct agent, combining external medical knowledge APIs with a local patient database for clinical lookups, ICD-10 coding, and research-backed responses.
 
 ---
-## Demo
+### Demo
 https://github.com/user-attachments/assets/7ac75e7d-74b0-4f79-aab3-7788b9911056
 
 
 ---
-## System Overview
+### System Overview
 
 The project runs three components:
 
@@ -18,11 +18,11 @@ The project runs three components:
 
 ---
 
-## External MCP Server
+### External MCP Server
 
 Exposes public medical APIs as MCP tools.
 
-### Integrated APIs
+#### Integrated APIs
 
 | API | Purpose |
 |-----|---------|
@@ -31,7 +31,7 @@ Exposes public medical APIs as MCP tools.
 | ClinicalTrials.gov v2 | Active and completed trials |
 | medRxiv | Recent medical research preprints |
 
-### Tools
+#### Tools
 
 - #### health_topics
 Search Health.gov MyHealthfinder for consumer health information by keyword.
@@ -47,7 +47,7 @@ Pull recent medRxiv preprints matching a query (180-day window).
 
 ---
 
-## Internal MCP Server
+### Internal MCP Server
 
 Serves a local patient database.
 
@@ -66,12 +66,7 @@ Get a patient's calculated clinical risk score.
 List all patients in the internal database.
 
 ---
-
-## Streamlit Agent UI
-
-A chat interface that wires both MCP servers into a LangGraph ReAct agent.
-
-### Features
+#### Features
 
 - **Multi-server MCP client** - talks to both external (8000) and internal (8001) servers in one agent.
 - **Tool trace per turn** - every assistant reply has an expandable panel showing exactly which tools were called, with what arguments, and what they returned.
@@ -81,7 +76,7 @@ A chat interface that wires both MCP servers into a LangGraph ReAct agent.
 
 ---
 
-## Architecture
+### Architecture
 
 ```
 hospital-assistant-MCP-server/
@@ -97,9 +92,9 @@ hospital-assistant-MCP-server/
 
 ---
 
-## Running
+### Running
 
-### 1. Install dependencies
+#### 1. Install dependencies
 
 ```bash
 python -m venv mcp-env
@@ -108,7 +103,7 @@ pip install streamlit langchain-mcp-adapters langgraph langchain-openai \
             python-dotenv httpx mcp
 ```
 
-### 2. Set environment variables
+#### 2. Set environment variables
 
 Create a `.env` file:
 
@@ -116,7 +111,7 @@ Create a `.env` file:
 OPENAI_API_KEY=''
 ```
 
-### 3. Start the MCP servers
+#### 3. Start the MCP servers
 
 In two separate terminals:
 
@@ -128,7 +123,7 @@ python server/external_server.py
 python server/internal_server.py   
 ```
 
-### 4. Launch the UI
+#### 4. Launch the UI
 
 ```bash
 streamlit run app.py
