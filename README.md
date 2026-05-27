@@ -131,6 +131,5 @@ python server/internal_server.py
 ```bash
 streamlit run app.py
 ```
-Open the URL Streamlit.
 
 
