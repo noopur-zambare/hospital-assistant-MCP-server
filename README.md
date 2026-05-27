@@ -66,7 +66,7 @@ Get a patient's calculated clinical risk score.
 List all patients in the internal database.
 
 ---
-#### Features
+### Features
 
 - **Multi-server MCP client** - talks to both external (8000) and internal (8001) servers in one agent.
 - **Tool trace per turn** - every assistant reply has an expandable panel showing exactly which tools were called, with what arguments, and what they returned.
