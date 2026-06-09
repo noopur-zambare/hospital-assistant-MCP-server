@@ -129,4 +129,12 @@ python server/internal_server.py
 streamlit run app.py
 ```
 
+---
+
+### Tech Stack
+- MCP Servers
+- LangGraph
+- LangChain
+- Streamlit
+
 
