@@ -4,4 +4,7 @@
 # virtual environment
 /mcp-env
 
+# rag setup
+/rag_index
+
 /__pycache__

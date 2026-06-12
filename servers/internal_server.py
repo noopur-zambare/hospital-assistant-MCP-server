@@ -3,7 +3,7 @@ import sqlite3
 
 mcp = FastMCP("InternalHospitalDB", host="0.0.0.0", port=8001)
 
-DB_FILE = "hospital.db"
+DB_FILE = "expanded_hospital.db"
 
 
 def get_connection():

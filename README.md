@@ -10,11 +10,12 @@ https://github.com/user-attachments/assets/7ac75e7d-74b0-4f79-aab3-7788b9911056
 ---
 ### System Overview
 
-The project runs three components:
+The project runs four components:
 
 1. **External MCP Server** - public medical knowledge APIs
 2. **Internal MCP Server** - local patient database
-3. **Streamlit App** - chat UI with an OpenAI agent that calls tools across both servers
+3. **RAG Layer (FAISS)** - unstructured clinical notes retrieval
+4. **Streamlit App** - chat UI with an OpenAI agent that calls tools across both servers
 
 ---
 
@@ -84,7 +85,8 @@ hospital-assistant-MCP-server/
 ├── server/
 │   ├── external_server.py      
 │   └── internal_server.py  
-├── app.py                 
+├── app.py          
+├── rag_tool.py                
 ├── .env                   
 ├── hospital.db
 └── README.md
