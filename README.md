@@ -82,7 +82,7 @@ List all patients in the internal database.
 ```
 hospital-assistant-MCP-server/
 │
-├── server/
+├── servers/
 │   ├── external_server.py   
 │   ├── internal_server.py     
 │   └── rag_tool.py  
@@ -118,11 +118,11 @@ OPENAI_API_KEY=''
 In two separate terminals:
 
 ```bash
-python server/external_server.py    
+python servers/external_server.py    
 ```
 
 ```bash
-python server/internal_server.py   
+python servers/internal_server.py   
 ```
 
 #### 4. Launch the UI
