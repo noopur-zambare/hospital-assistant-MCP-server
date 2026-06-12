@@ -137,4 +137,9 @@ streamlit run app.py
 - LangChain
 - Streamlit
 
+---
+
+### ⚠️ Disclaimer
+This project is for research and educational purposes only.
+It is not a substitute for professional medical advice, diagnosis, or treatment.
 
