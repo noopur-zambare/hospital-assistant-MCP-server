@@ -83,10 +83,10 @@ List all patients in the internal database.
 hospital-assistant-MCP-server/
 │
 ├── server/
-│   ├── external_server.py      
-│   └── internal_server.py  
-├── app.py          
-├── rag_tool.py                
+│   ├── external_server.py   
+│   ├── internal_server.py     
+│   └── rag_tool.py  
+├── app.py                         
 ├── .env                   
 ├── hospital.db
 └── README.md
