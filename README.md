@@ -50,7 +50,7 @@ Pull recent medRxiv preprints matching a query (180-day window).
 
 ### Internal MCP Server
 
-Serves a local patient database.
+Serves a local patient database and search over patient notes.
 
 ### Tools
 
